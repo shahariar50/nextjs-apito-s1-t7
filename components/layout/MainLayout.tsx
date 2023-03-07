@@ -11,7 +11,7 @@ const MainLayout: React.FC<mainLayoutProps> = ({ children, isContact }) => {
     <main className="main" id="top">
       <Header />
       {children}
-      <Footer ifContact={isContact} />
+      <Footer isContact={isContact} />
     </main>
   );
 };
