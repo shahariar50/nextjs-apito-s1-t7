@@ -1,9 +1,8 @@
 import MainLayout from "components/layout/MainLayout";
-import AddressSection from "components/page/homepage/AddressSection";
-import ContactForm from "components/page/homepage/ContactForm";
+import ContactSection from "components/page/homepage/ContactSection";
 import DestinationsSection from "components/page/homepage/DestinationsSection";
+import ExampleVideoSection from "components/page/homepage/ExampleVideoSection";
 import HeroSection from "components/page/homepage/HeroSection";
-import NewsLetterSection from "components/page/homepage/NewsLetterSection";
 import OfferSection from "components/page/homepage/OfferSection";
 import ServiceSection from "components/page/homepage/ServiceSection";
 import StatisticsSection from "components/page/homepage/StatisticsSection";
@@ -18,9 +17,8 @@ export default function Home() {
       <DestinationsSection />
       <TestemonialSection />
       <OfferSection />
-      <ContactForm />
-      <AddressSection />
-      <NewsLetterSection />
+      <ExampleVideoSection />
+      <ContactSection />
     </MainLayout>
   );
 }
