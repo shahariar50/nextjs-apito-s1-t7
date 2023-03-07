@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Script from "next/script";
 
 const Footer = () => {
   return (
@@ -118,9 +117,9 @@ const Footer = () => {
             <div className="col-md-8 mb-3 mb-md-0 mx-auto">
               <p>
                 Copyright &copy;
-                <Script id="footer">
+                {/* <Script id="footer">
                   document.write(new Date().getFullYear());
-                </Script>
+                </Script> */}
                 . All Rights Reserved. &mdash; Designed with love by{" "}
                 <a href="https://untree.co" className="link-highlight">
                   Untree.co
