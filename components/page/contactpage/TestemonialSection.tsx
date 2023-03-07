@@ -26,8 +26,8 @@ const TestemonialSection = () => {
                   </p>
                 </blockquote>
               </div>
-
-              <div className="testimonial mx-auto">
+              {/* TODO: Add owl slider */}
+              {/* <div className="testimonial mx-auto">
                 <figure className="img-wrap">
                   <picture>
                     <img
@@ -65,7 +65,7 @@ const TestemonialSection = () => {
                     language ocean.&rdquo;
                   </p>
                 </blockquote>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
