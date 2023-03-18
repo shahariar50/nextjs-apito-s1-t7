@@ -1,3 +1,6 @@
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 const DestinationsSection = () => {
   return (
     <div className="untree_co-section">
@@ -8,8 +11,14 @@ const DestinationsSection = () => {
           </div>
         </div>
 
-        <div className="owl-carousel owl-3-slider">
-          <div className="item">
+        <Swiper
+          spaceBetween={10}
+          slidesPerView={3}
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
+          className="destinationSlider"
+        >
+          <SwiperSlide className="item">
             <a
               className="media-thumb"
               href="/images/hero-slider-1.jpg"
@@ -27,9 +36,8 @@ const DestinationsSection = () => {
                 />
               </picture>
             </a>
-          </div>
-
-          {/* <div className="item">
+          </SwiperSlide>
+          <SwiperSlide className="item">
             <a
               className="media-thumb"
               href="images/hero-slider-2.jpg"
@@ -47,9 +55,8 @@ const DestinationsSection = () => {
                 />
               </picture>
             </a>
-          </div>
-
-          <div className="item">
+          </SwiperSlide>
+          <SwiperSlide className="item">
             <a
               className="media-thumb"
               href="images/hero-slider-3.jpg"
@@ -67,9 +74,8 @@ const DestinationsSection = () => {
                 />
               </picture>
             </a>
-          </div>
-
-          <div className="item">
+          </SwiperSlide>
+          <SwiperSlide className="item">
             <a
               className="media-thumb"
               href="images/hero-slider-4.jpg"
@@ -87,9 +93,8 @@ const DestinationsSection = () => {
                 />
               </picture>
             </a>
-          </div>
-
-          <div className="item">
+          </SwiperSlide>
+          <SwiperSlide className="item">
             <a
               className="media-thumb"
               href="images/hero-slider-5.jpg"
@@ -107,9 +112,8 @@ const DestinationsSection = () => {
                 />
               </picture>
             </a>
-          </div>
-
-          <div className="item">
+          </SwiperSlide>
+          <SwiperSlide className="item">
             <a
               className="media-thumb"
               href="images/hero-slider-1.jpg"
@@ -127,8 +131,8 @@ const DestinationsSection = () => {
                 />
               </picture>
             </a>
-          </div> */}
-        </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );
