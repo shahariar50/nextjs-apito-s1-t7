@@ -7,7 +7,7 @@ const StatisticsSection = () => {
             <div className="counter-wrap">
               <div className="counter">
                 <span className="" data-number="9313">
-                  0
+                  9,313
                 </span>
               </div>
               <span className="caption">No. of Travels</span>
@@ -17,7 +17,7 @@ const StatisticsSection = () => {
             <div className="counter-wrap">
               <div className="counter">
                 <span className="" data-number="8492">
-                  0
+                  8,492
                 </span>
               </div>
               <span className="caption">No. of Clients</span>
@@ -27,7 +27,7 @@ const StatisticsSection = () => {
             <div className="counter-wrap">
               <div className="counter">
                 <span className="" data-number="100">
-                  0
+                  100
                 </span>
               </div>
               <span className="caption">No. of Employees</span>
@@ -37,7 +37,7 @@ const StatisticsSection = () => {
             <div className="counter-wrap">
               <div className="counter">
                 <span className="" data-number="120">
-                  0
+                  120
                 </span>
               </div>
               <span className="caption">No. of Countries</span>

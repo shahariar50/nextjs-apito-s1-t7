@@ -1,5 +1,30 @@
+import { useEffect, useState } from "react";
+
 /* eslint-disable react/no-unescaped-entities */
+import { getRandomNumber } from "lib/math";
+
 const HeroSection = () => {
+  const cityList = [
+    "Peru",
+    "Japan",
+    "Thailand",
+    "Brazil",
+    "United States",
+    "Israel",
+    "China",
+    "Russia",
+  ];
+  const [currentCity, setCurrentCity] = useState(cityList[0]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentCity(cityList[getRandomNumber(0, cityList.length - 1)]);
+    }, 3000);
+
+    return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div className="hero">
       <div className="container">
@@ -8,7 +33,9 @@ const HeroSection = () => {
             <div className="intro-wrap">
               <h1 className="mb-5">
                 <span className="d-block">Let's Enjoy Your</span> Trip In{" "}
-                <span className="typed-words"></span>
+                <span className="typed-words" style={{ transition: ".3s" }}>
+                  {currentCity}
+                </span>
               </h1>
 
               <div className="row">
@@ -69,33 +96,15 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="col-lg-5">
-            <picture className="slides">
-              <img
-                src="/images/hero-slider-1.jpg"
-                alt="Image"
-                className="img-fluid active"
-              />
-              <img
-                src="/images/hero-slider-2.jpg"
-                alt="Image"
-                className="img-fluid"
-              />
-              <img
-                src="/images/hero-slider-3.jpg"
-                alt="Image"
-                className="img-fluid"
-              />
-              <img
-                src="/images/hero-slider-4.jpg"
-                alt="Image"
-                className="img-fluid"
-              />
-              <img
-                src="/images/hero-slider-5.jpg"
-                alt="Image"
-                className="img-fluid"
-              />
-            </picture>
+            <div className="slides">
+              <picture>
+                <img
+                  src="/images/hero-slider-1.jpg"
+                  alt="Image"
+                  className="img-fluid active"
+                />
+              </picture>
+            </div>
           </div>
         </div>
       </div>
