@@ -1,14 +1,17 @@
+import TestemonialSection from "components/common/TestemonialSection";
 import MainLayout from "components/layout/MainLayout";
+import PageHeader from "components/layout/PageHeader";
 import ContactFormSection from "components/page/contactpage/ContactFormSection";
-import HeroSection from "components/page/contactpage/HeroSection";
-import TestemonialSection from "components/page/contactpage/TestemonialSection";
 
 const ContactPage = () => {
   return (
     <MainLayout isContact={false}>
-      <HeroSection />
+      <PageHeader
+        title="Contact Us"
+        subtitle="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+      />
       <ContactFormSection />
-      <TestemonialSection />
+      <TestemonialSection bg="white" />
     </MainLayout>
   );
 };

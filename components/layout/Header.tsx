@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect } from "react";
 
 const Header = () => {
@@ -11,6 +13,7 @@ const Header = () => {
       }
     });
   }, []);
+  const router = useRouter();
 
   return (
     <nav className="site-nav">
@@ -20,45 +23,17 @@ const Header = () => {
             Tour <span className="text-primary">.</span>
           </a>
           <ul className="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
-            <li className="active">
-              <a href="index.html">Home</a>
+            <li className={router.pathname === "/" ? "active" : ""}>
+              <Link href="/">Home</Link>
             </li>
-            <li className="has-children">
-              <a href="#">Dropdown</a>
-              <ul className="dropdown">
-                <li>
-                  <a href="elements.html">Elements</a>
-                </li>
-                <li>
-                  <a href="#">Menu One</a>
-                </li>
-                <li className="has-children">
-                  <a href="#">Menu Two</a>
-                  <ul className="dropdown">
-                    <li>
-                      <a href="#">Sub Menu One</a>
-                    </li>
-                    <li>
-                      <a href="#">Sub Menu Two</a>
-                    </li>
-                    <li>
-                      <a href="#">Sub Menu Three</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Menu Three</a>
-                </li>
-              </ul>
+            <li className={router.pathname === "/services" ? "active" : ""}>
+              <Link href="/services">Services</Link>
             </li>
-            <li>
-              <a href="services.html">Services</a>
+            <li className={router.pathname === "/about" ? "active" : ""}>
+              <Link href="/about">About</Link>
             </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact Us</a>
+            <li className={router.pathname === "/contact" ? "active" : ""}>
+              <Link href="/contact">Contact Us</Link>
             </li>
           </ul>
 
