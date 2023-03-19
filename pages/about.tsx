@@ -1,10 +1,10 @@
-import TestemonialSection from "components/common/TestemonialSection";
+import ExampleVideoSection from "components/common/templates/ExampleVideoSection";
+import TestemonialSection from "components/common/templates/TestemonialSection";
 import MainLayout from "components/layout/MainLayout";
 import PageHeader from "components/layout/PageHeader";
 import AboutSection from "components/page/aboutpage/AboutSection";
 import ContactSection from "components/page/aboutpage/ContactSection";
 import TeamsSection from "components/page/aboutpage/TeamsSection";
-import TourSection from "components/page/aboutpage/TourSection";
 
 const AboutPage = () => {
   return (
@@ -16,7 +16,7 @@ const AboutPage = () => {
       <AboutSection />
       <TeamsSection />
       <TestemonialSection />
-      <TourSection />
+      <ExampleVideoSection />
       <ContactSection />
     </MainLayout>
   );

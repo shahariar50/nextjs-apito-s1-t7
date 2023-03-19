@@ -1,3 +1,5 @@
+import ImageLightbox from "components/common/lightbox/ImageLightbox";
+
 const ExampleVideoSection = () => {
   return (
     <div className="untree_co-section">
@@ -5,14 +7,11 @@ const ExampleVideoSection = () => {
         <div className="row justify-content-between align-items-center">
           <div className="col-lg-6">
             <figure className="img-play-video">
-              <a
-                id="play-video"
-                className="video-play-button"
-                href="https://www.youtube.com/watch?v=mwtbEGNABWU"
-                data-fancybox
-              >
-                <span></span>
-              </a>
+              <ImageLightbox>
+                <span id="play-video" className="video-play-button">
+                  <span></span>
+                </span>
+              </ImageLightbox>
               <picture>
                 <img
                   src="images/hero-slider-2.jpg"

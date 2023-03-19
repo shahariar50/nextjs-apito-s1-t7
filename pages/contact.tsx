@@ -1,4 +1,4 @@
-import TestemonialSection from "components/common/TestemonialSection";
+import TestemonialSection from "components/common/templates/TestemonialSection";
 import MainLayout from "components/layout/MainLayout";
 import PageHeader from "components/layout/PageHeader";
 import ContactFormSection from "components/page/contactpage/ContactFormSection";
